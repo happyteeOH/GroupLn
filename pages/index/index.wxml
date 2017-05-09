@@ -1,0 +1,22 @@
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+<form bindsubmit="listenFormSubmit" bindreser="listenFormReser" >
+  <View class="inputView">
+    <input class="input" name="username" type="number" placeholder="请输入房间名字" placeholder-style="color: gray"> </input>
+  </View>
+  <view class="inputView">
+    <input class="input" name="password" password="true" placeholder="请输入房间密码" placeholder-style="color: gray"/>
+  </view>
+  <View style="display:flex;justify-content: center;margin-top:10px;">
+  </View>
+  <navigator url="../../pages/form/form">
+  <button formType="submit" type="primary" style="margin-top:10px;">Create</button>
+  </navigator>
+</form>

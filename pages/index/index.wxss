@@ -1,0 +1,33 @@
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 20px;
+}
+.input{
+  padding-left: 10px;
+  height: 44px;
+}
+.inputView{
+  /*边界：大小1px, 为固体，为绿色*/
+  border: 1px solid green;
+  /*边界角的弧度*/
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 15px;
+}

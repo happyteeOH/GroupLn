@@ -1,0 +1,32 @@
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">ID</view>
+    <view class="th">Name</view>
+    <view class="th ">Location</view>
+  </view>
+  <block wx:for="{{listData}}" wx:key="{{code}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td">
+      <input name="input" style="background-color: #FFFFFF" />
+      </view>
+      <view class="td"><input name="input" style="background-color: #E6F3F9" /></view>
+      <view class="td"><input name="input" style="background-color: #FFFFFF"  /></view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td"><input name="input" style="background-color: #E6F3F9"  /></view>
+      <view class="td"><input name="input" style="background-color: #FFFFFF"  /></view>
+      <view class="td"><input name="input" style="background-color: #E6F3F9"  /></view>
+    </view>
+  </block>
+</view>
+<view class="section">
+   <picker name="datePicker" mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+     <view class="picker">
+        Activity Time: {{date}}
+     </view>
+   </picker>
+</view>
+<button formType="submit" type="primary" style="margin-top:5px;" id="add_one_round" bindtap="addround">Add</button>
+<button formType="submit" type="primary" style="margin-top:5px;" >Submit</button>
+<button formType="reset" type="primary" style="margin-top:5px;" id="minus_one_round" bindtap="minusround">Delete</button>
+
